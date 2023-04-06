@@ -1,0 +1,1 @@
+# Receitas_React_Native
