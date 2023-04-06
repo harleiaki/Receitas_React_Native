@@ -13,9 +13,9 @@ import { Logo } from "../../components/logo";
 import api from "../../services/api";
 import { FoodList } from "../../components/foodlist";
 
-import {useNavigation} from "@react-navigation/native";
+import { useNavigation } from "@react-navigation/native";
 
-import { Text as MotiText} from 'moti'
+import { Text as MotiText } from "moti";
 
 export function Home() {
   const [inputValue, setInputValue] = useState("");
@@ -32,12 +32,11 @@ export function Home() {
   }, []);
 
   function handleSearch() {
-
-    if(!inputValue) return;
+    if (!inputValue) return;
 
     let input = inputValue;
-    setInputValue("")
-    navigation.navigate("Search", { name: input })
+    setInputValue("");
+    navigation.navigate("Search", { name: input });
 
     console.log("Você clicou");
     console.log(inputValue);
@@ -47,38 +46,41 @@ export function Home() {
     <SafeAreaView style={styles.container}>
       <Logo />
 
-      <MotiText 
-      style={styles.title}
-      from={{
-        opacity:0,
-        translateY: 15,
-      }}
-      animate={{
-        opacity:1,
-        translateY: 0 
-      }}
-      transition={{
-        delay:100,
-        type: "timing",
-        duration: 650
-      }}
-      >Encontre a receita
+      <MotiText
+        style={styles.title}
+        from={{
+          opacity: 0,
+          translateY: 15,
+        }}
+        animate={{
+          opacity: 1,
+          translateY: 0,
+        }}
+        transition={{
+          delay: 100,
+          type: "timing",
+          duration: 650,
+        }}
+      >
+        Encontre a receita
       </MotiText>
-      <MotiText 
-      style={styles.title}
-      from={{
-        opacity:0,
-        translateY: 18,
-      }}
-      animate={{
-        opacity:1,
-        translateY: 0 
-      }}
-      transition={{
-        delay:200,
-        type: "timing",
-        duration: 850
-      }}>que combina com você
+      <MotiText
+        style={styles.title}
+        from={{
+          opacity: 0,
+          translateY: 18,
+        }}
+        animate={{
+          opacity: 1,
+          translateY: 0,
+        }}
+        transition={{
+          delay: 200,
+          type: "timing",
+          duration: 850,
+        }}
+      >
+        que combina com você
       </MotiText>
 
       <View style={styles.form}>
@@ -105,7 +107,7 @@ export function Home() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#F3F9FF",
+    backgroundColor: "#111",
     paddingTop: 36,
     paddingStart: 14,
     paddingEnd: 14,
@@ -113,7 +115,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 26,
     fontWeight: "bold",
-    color: "#0e0e0e",
+    color: "#f0f8ff",
   },
   input: {
     width: "90%",
@@ -121,6 +123,7 @@ const styles = StyleSheet.create({
     height: 54,
   },
   form: {
+    backgroundColor: "#F3F9FF",
     width: "100%",
     borderRadius: 8,
     marginTop: 16,

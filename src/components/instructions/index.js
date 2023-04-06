@@ -11,13 +11,14 @@ export function Instructions( {data, index} ) {
 
 const styles = StyleSheet.create({
     container:{
+        backgroundColor:"#fff",
         flexDirection:"row",
         padding: 8,
         marginBottom:14,
     },
     name:{
         fontWeight: "bold",
-        fontSize: 18,
+        fontSize: 10,
     },
     text:{
         lineHeight:20,
