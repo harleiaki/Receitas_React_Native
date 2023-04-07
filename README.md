@@ -14,8 +14,12 @@ https://user-images.githubusercontent.com/96266332/230491835-4d3f16ba-42b7-4ea7-
 
 ## Para rodar:
 
-- cd no local do arquivo
+- cd no local do arquivo:
 - json-server --watch -d 180 --host 192.168.0.11 db.json    --- vai depender o seu ipv4 para saber é só dar um ipconfig e verificar/ essa é uma api com as receitas. IMPORTANTE DEIXAR O CMD ABERTO
-- abrir outro terminal e fazer novamente o cd no local do arquivo
+- abrir outro terminal e fazer novamente o cd no local do arquivo com o comando:
 - npx expo start
-- 
+
+## App.js
+controle de rotas das telas.
+
+
