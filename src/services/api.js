@@ -1,6 +1,6 @@
 import axios from 'axios';
 /*
-//Rodar com ipv4 json-server --watch -d 180 --host 192.168.0.6 db.json
+//Rodar com ipv4 json-server --watch -d 180 --host 192.168.0.11 db.json
 */
 
 const api  = axios.create({
