@@ -22,4 +22,25 @@ https://user-images.githubusercontent.com/96266332/230491835-4d3f16ba-42b7-4ea7-
 ## App.js
 controle de rotas das telas.
 
+## src components: 
+- foodlist: gradiente das imagens da tela home do app e estilização de texto
+- ingredients: estilização da parte de ingredientes da api de receitas
+- instructions: estilização da parte de instruções da api de receitas
+- logo: estilização de texto animado do home
+- video: estilização do botão de play 
 
+## src pages:
+- detail: estilização da pagina de receitas e icones de coração e compartilhamento
+- favorites: estilização da página de receitas
+- home: estilização da home input e logo
+- search: pagina de pesquisa 
+
+## src routes:
+- tabbar
+- stackbar
+
+## src services:
+- conexão com api
+
+## src utils:
+- armazenamento de dados
